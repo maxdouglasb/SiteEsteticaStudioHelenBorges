@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Estética LM</title>
+</head>
+
+<body>
+    <header class="topo_pagina">
+        <div class="cabecalho">
+            <img src="" alt="LOGO DA LOJA ">
+
+            <div class="menu">
+                <nav class="menu_nav">
+                    <a href="#" class="menu_link">Home</a>
+                    <a href="#" class="menu_link">Sobre Nós</a>
+                    <a href="#servico" class="menu_link">Serviços</a>
+                    <a href="#" class="menu_link">Nossa Loja</a>
+
+            </div>
+        </div>
+    </header>
+
+
+    <section class="carrosel">
+
+
+
+        <div class="my-slider">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./assets/Cílios.png" alt="LIMPEZA DE PELE"></div>
+            <div class="swiper-slide"><img src="./assets/DesigndeSobrancelhas.png" alt="peeling de ouro"></div>
+            <div class="swiper-slide"><img src="./assets/JatodePlasma.png" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/LIMPEZADEPELE.png" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/peelingdeouro.png" alt=""></div>
+            ...
+        </div>
+
+
+
+
+    </section>
+    <div class="subtitulo_servico">
+        <a href="./servicos.html" class="botao_servico">Nossos Servicos</a>
+        <h2 class="titulo_servico">SOMOS REFERÊNCIA NO UNIVERSO DA <br>BELEZA!</h2>
+    </div>
+
+    <section class="servico" id="servico">
+
+
+        <div class="my-sliders">
+
+            <div class="servico_img">
+
+                <img src="./assets/LIMPEZADEPELE.png" alt="LIMPEZA DE PELE">
+                <a href="#" class="servico_link">Limpeza de Pele</a>
+            </div>
+
+            <div class="servico_img"><img src="./assets/peelingdeouro.png" alt="peeling de ouro">
+                <a href="#" class="servico_link">Peeling de Ouro</a>
+            </div>
+
+            <div class="servico_img"><img src="./assets/JatodePlasma.png" alt="Jato de Plasma">
+                <a href="#" class="servico_link">Jato de Plasma</a>
+            </div>
+
+            <div class="servico_img"><img src="./assets/DesigndeSobrancelhas.png" alt="Design de Sobrancelhas">
+                <a href="#" class="servico_link">Design de Sobrancelhas</a>
+            </div>
+
+            <div class="servico_img"><img src="./assets/Cílios.png" alt="Cílios">
+                <a href="#" class="servico_link">Cílios</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module">
+        var slider = tns({ container: '.my-slider', items: 1, speed:1500, slideBy: 'page', autoplay: true , nav:false, autoplayButtonOutput:false, controls:false, mouseDrag:true}); var slider = tns({ container: '.my-sliders', speed:2500, items: 3, slideBy: 'page',
+        autoplay: true , nav:false, autoplayButtonOutput:false, controls:false, mouseDrag:true});
+
+    </script>
+
+</body>
+
+</html>
