@@ -290,10 +290,9 @@
             display: none;
         }
         
-        .container_botao,
-        .lista_menu.rodape_texto_mobile,
-        .rodape_texto_tablet,
-        .lista_menu_item {
+        .menu_hamburguer-inicial,
+        .rodape_texto_mobile,
+        .rodape_texto_tablet {
             display: none;
         }
         /* Tablet*/
@@ -391,6 +390,10 @@
             }
             .logo {
                 display: flex;
+            }
+            .rodape_texto_tablet,
+            .menu_hamburguer-inicial {
+                display: block;
             }
         }
         
@@ -501,6 +504,10 @@
                 display: flex;
             }
             .my-sliders {
+                display: block;
+            }
+            .rodape_texto_mobile,
+            .menu_hamburguer-inicial {
                 display: block;
             }
         }
