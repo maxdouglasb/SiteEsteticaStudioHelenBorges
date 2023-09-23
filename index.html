@@ -4,20 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 
-    <title>Estética LM</title>
+    <title>Studio Helen Borges</title>
 </head>
 
 <body>
+
+    <a href="#top" class="btn-fixed">
+        <span class="material-icons">
+            north
+        </span>
+    </a>
+
+
     <header class="topo_pagina">
         <div class="cabecalho">
-            <img src="" alt="LOGO DA LOJA ">
+
+            <div> <input type="checkbox" id="menu" class="container_botao">
+                <label for="menu">
+                <span class="menu-hamburgue"></span>
+            </label>
+                <ul class="lista_menu">
+                    <li class="lista_menu_item"><a href="#" class="menu_link">Sobre Nós</a></li>
+                    <li class="lista_menu_item"><a href="#servico" class="menu_link">Serviços</a></li>
+                    <li class="lista_menu_item"><a href="#" class="menu_link">Nossa Loja</a></li>
+                </ul>
+            </div>
+
+            <div class="logo">
+                <img src="./assets/logo.png" alt="LOGO DA LOJA ">
+                <img class="img_nome" src="./assets/logoNome.png" alt="logo">
+            </div>
+
+
 
             <div class="menu">
+
+
                 <nav class="menu_nav">
+
                     <a href="#" class="menu_link">Home</a>
                     <a href="#" class="menu_link">Sobre Nós</a>
                     <a href="#servico" class="menu_link">Serviços</a>
@@ -48,7 +76,7 @@
     </section>
     <div class="subtitulo_servico">
         <a href="./servicos.html" class="botao_servico">Nossos Servicos</a>
-        <h2 class="titulo_servico">SOMOS REFERÊNCIA NO UNIVERSO DA <br>BELEZA!</h2>
+        <h2 class="titulo_servico">SOMOS REFERÊNCIA NO UNIVERSO DA BELEZA!</h2>
     </div>
 
     <section class="servico" id="servico">
@@ -58,27 +86,189 @@
 
             <div class="servico_img">
 
-                <img src="./assets/LIMPEZADEPELE.png" alt="LIMPEZA DE PELE">
-                <a href="#" class="servico_link">Limpeza de Pele</a>
+                <a href="#" class="servico_link"><img src="./assets/facial.png" alt="LIMPEZA DE PELE"> Facial
+                </a>
             </div>
 
-            <div class="servico_img"><img src="./assets/peelingdeouro.png" alt="peeling de ouro">
-                <a href="#" class="servico_link">Peeling de Ouro</a>
+
+            <div class="servico_img_teste">
+                <a href="#" class="servico_link">
+                </a>
             </div>
 
-            <div class="servico_img"><img src="./assets/JatodePlasma.png" alt="Jato de Plasma">
-                <a href="#" class="servico_link">Jato de Plasma</a>
+
+            <div class="servico_img">
+                <a href="#" class="servico_link"><img src="./assets/labios.png" alt="LABIOS"> Lábios
+                </a>
             </div>
 
-            <div class="servico_img"><img src="./assets/DesigndeSobrancelhas.png" alt="Design de Sobrancelhas">
-                <a href="#" class="servico_link">Design de Sobrancelhas</a>
+
+
+            <div class="servico_img_teste">
+                <a href="#" class="servico_link">
+                </a>
             </div>
 
-            <div class="servico_img"><img src="./assets/Cílios.png" alt="Cílios">
-                <a href="#" class="servico_link">Cílios</a>
+            <div class="servico_img">
+                <a href="#" class="servico_link"><img src="./assets/DEPILACAO.png" alt="Jato de Plasma"> Depilação Corporal - Epilare</a>
             </div>
+
+            <div class="servico_img_teste">
+                <a href="#" class="servico_link">
+                </a>
+            </div>
+
+
+            <div class="servico_img">
+                <a href="#" class="servico_link"><img src="./assets/sobrancelhas.png" alt="Design de Sobrancelhas"> Sobrancelha</a>
+
+            </div>
+
+            <div class="servico_img_teste">
+                <a href="#" class="servico_link">
+                </a>
+            </div>
+
+
+            <div class="servico_img">
+                <a href="#" class="servico_link"><img src="./assets/Cílios1.png" alt="Cílios"> Cílios
+                </a>
+            </div>
+            <div class="servico_img_teste">
+                <a href="#" class="servico_link">
+                </a>
+            </div>
+
+            <div class="servico_img">
+                <a href="#" class="servico_link"><img src="./assets/Dermopigmentação.png" alt="Cílios"> Dermopigmentação
+                </a>
+            </div>
+
+            <div class="servico_img_teste">
+                <a href="#" class="servico_link">
+                </a>
+            </div>
+
+            <div class="servico_img">
+                <a href="#" class="servico_link"><img src="./assets/DEPILACAO1.png" alt="Cílios"> Depilação
+                </a>
+            </div>
+
+
+            <div class="servico_img_teste">
+                <a href="#" class="servico_link">
+                </a>
+            </div>
+
+
         </div>
     </section>
+
+
+
+
+    <section class="contato">
+        <div class="contato_conteiner">
+            <h2 class="contato_titulo">Fale Conosco</h2>
+            <p class="contato_texto">Dúvidas, elogios, agendamentos, entre em contato conosco!</p>
+            <form action="contato" class="formulario">
+                <input type="text" placeholder="Nome" required>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{5}[0-9]{4}" placeholder="Telefone/WhatApp " required>
+                <input type="email" placeholder="Email" required>
+                <textarea name="Mensagem" id="" cols="20" rows="7" placeholder="Mensagem"></textarea>
+                <button type="submit" class="contato_botao">ENVIAR</button>
+            </form>
+
+        </div>
+
+
+        <div class="contato_conteiner">
+
+            <video class="video" controls="controls" autoplay="autoplay" loop>
+                <source src="./assets/video.mp4" type="v">
+                
+                </object>
+            </video>
+
+        </div>
+
+    </section>
+
+
+
+    <hr>
+
+    <section class="rodape">
+
+
+        <div class="conteiner-footer">
+            <ul class="footer_lista">
+                <li class="footer_titulo">Contato</li>
+                <li class="footer_link">
+                    <img src="./assets/email.png" alt="instagram">
+                    <a href="#" class="footer_link_footer">Email</a>
+                </li>
+                <li class="footer_link">
+                    <img src="./assets/whatsapp.png" alt="whatsapp">
+                    <a href="https://wa.me/5562999615651?text=Bem+vindo+a+Est%C3%A9tica+Helen+Borges" class="footer_link_footer">Contato</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="conteiner-footer">
+            <ul class="footer_lista">
+                <li class="footer_titulo">Acompanhe</li>
+                <li class="footer_link">
+                    <img src="./assets/instagram.png" alt="instagram">
+                    <a href="https://www.instagram.com/studiohelenborges/" target="" class="footer_link_footer">Instagram</a>
+                </li>
+                <li class="footer_link">
+                    <img src="./assets/tiktok.png" alt="whatsapp">
+                    <a href="#" class="footer_link_footer">Tik Tok</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="conteiner-footer footer_negocios">
+            <ul class="footer_lista">
+                <li class="footer_titulo">Negócios</li>
+                <li class="footer_link">
+                    <img src="./assets/politica.png" alt="instagram">
+                    <a href="#" class="footer_link_footer">Política de privacidade</a>
+                </li>
+                <li class="footer_link">
+                    <img src="./assets/termo.png" alt="whatsapp">
+                    <a href="#" class="footer_link_footer">Termos e Condições</a>
+                </li>
+
+        </div>
+        <div class="conteiner-footer">
+            <ul class="footer_lista footer_nossaPagina">
+                <li class="footer_titulo ">Nossa Página</li>
+                <li class="footer_link">
+                    <img src="./assets/sobre.png" alt="instagram">
+                    <a href="#" class="footer_link_footer">Sobre Nós</a>
+                </li>
+                <li class="footer_link">
+                    <img src="./assets/servico.png" alt="whatsapp">
+                    <a href="#" class="footer_link_footer">Serviços</a>
+                </li>
+                <li class="footer_link">
+                    <img src="./assets/nossaloja.png" alt="whatsapp">
+                    <a href="#" class="footer_link_footer">Nossa Loja</a>
+                </li>
+
+        </div>
+
+
+    </section>
+    <footer class="final_pagina">
+        <p class="rodape_texto"> &copy; Copyright - 2023 | Studio Helen Borges | Todos os Direitos Reservados | Desenvolvido por Maxdouglas Borges</p>
+        <p class="rodape_texto_tablet"> &copy; Copyright - 2023 | Studio Helen Borges | Todos os Direitos Reservados</p>
+        <p class="rodape_texto_mobile"> &copy; Copyright - 2023 | Studio Helen Borges </p>
+
+    </footer>
 
 
 
@@ -87,10 +277,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="module">
-        var slider = tns({ container: '.my-slider', items: 1, speed:1500, slideBy: 'page', autoplay: true , nav:false, autoplayButtonOutput:false, controls:false, mouseDrag:true}); var slider = tns({ container: '.my-sliders', speed:2500, items: 3, slideBy: 'page',
+        var slider = tns({ container: '.my-slider', items: 1, speed:1500, slideBy: 'page', autoplay: true , nav:false, autoplayButtonOutput:false, controls:false, mouseDrag:true}); var slider = tns({ container: '.my-sliders', speed:3000, items: 3, slideBy: 'page',
         autoplay: true , nav:false, autoplayButtonOutput:false, controls:false, mouseDrag:true});
 
     </script>
+    <script src="./scripts.js"></script>
 
 </body>
 

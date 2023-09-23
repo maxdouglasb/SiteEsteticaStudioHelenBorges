@@ -1,125 +1,456 @@
-@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;400;700 & display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --corFundoSecudaria: #81d1e5;
-    --corTextoPrincipal: #4d5795;
-    --corPrincipal: #ededd8;
-}
-
-body {
-    background: #ededd8;
-    font-family: 'Poppins', sans-serif;
-}
-
-.cabecalho {
-    background: var(--corFundoSecudaria);
-    padding: 2em 10em 2em 5em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu_nav {
-    display: flex;
-    gap: 3em;
-    text-transform: uppercase;
-}
-
-.menu_link {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--corTextoPrincipal);
-}
-
-.menu_link:hover {
-    color: var(--corPrincipal);
-}
-
-.carrosel {
-    padding: 2em 4em;
-}
-
-.swiper-slide img {
-    width: 100%;
-    height: 30em;
-    border-radius: 10px;
-    border: solid 1px var(--corFundoSecudaria);
-}
-
-.servico {
-    padding: 2em 4em;
-    align-items: center;
-    display: block;
-    background: var(--corFundoSecudaria);
-    margin: 0 4em;
-    border-radius: 15px;
-    margin-bottom: 4em;
-}
-
-.servico img {
-    width: 300px;
-    height: 200px;
-    border-radius: 7px 20px;
-    margin-bottom: 1em;
-}
-
-.my-sliders {
-    align-items: center;
-    text-align: center
-}
-
-.servico_link {
-    background-color: var(--corPrincipal);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    font-size: 16px;
-    color: var(--corTextoPrincipal);
-    font-weight: 700;
-    padding: 1em;
-    margin: 0 auto;
-    width: 50%;
-    border-radius: 5px 25px;
-}
-
-.servico_link:hover {
-    background: var(--corTextoPrincipal);
-    color: var(--corPrincipal);
-}
-
-.subtitulo_servico {
-    display: flex;
-    justify-content: space-between;
-    padding: 3em 2em;
-}
-
-.botao_servico {
-    text-decoration: none;
-    background: var(--corTextoPrincipal);
-    border: none;
-    padding: 1em;
-    border-radius: 6px 20px;
-    color: var(--corPrincipal);
-    font-weight: 400;
-    margin-left: 1.5em;
-    text-align: center;
-    align-items: center;
-}
-
-.botao_servico:hover {
-    background: var(--corFundoSecudaria);
-    color: var(--corTextoPrincipal);
-}
-
-.titulo_servico {
-    color: var(--corTextoPrincipal);
-    font-weight: 700;
-    font-size: 24px;
-    margin-right: 2em;
-}
+        @import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;400;700 & display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --corFundoSecudaria: #81d1e5;
+            --corTextoPrincipal: #4d5795;
+            --corPrincipal: #ededd8;
+        }
+        
+        body {
+            background: #ededd8;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .cabecalho {
+            background: var(--corFundoSecudaria);
+            padding: 2em 10em 2em 5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .cabecalho img {
+            height: 60px;
+        }
+        
+        .logo {
+            align-items: center;
+            text-align: center;
+        }
+        
+        .menu_nav {
+            display: flex;
+            gap: 3em;
+            text-transform: uppercase;
+        }
+        
+        .menu_link {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--corTextoPrincipal);
+        }
+        
+        .menu_link:hover {
+            color: var(--corPrincipal);
+        }
+        /* Comeco da sessao carrosel Principal*/
+        
+        .carrosel {
+            padding: 2em 4em;
+        }
+        
+        .swiper-slide img {
+            width: 100%;
+            height: 30em;
+            border-radius: 10px;
+            border: solid 1px var(--corFundoSecudaria);
+        }
+        /* Comeco da sessao carrosel servicos*/
+        
+        .servico {
+            padding: 2em 4em;
+            align-items: center;
+            display: block;
+            background: var(--corPrincipal);
+            margin: 0 4em;
+            margin-bottom: 4em;
+        }
+        
+        .servico img {
+            width: 300px;
+            margin-bottom: 1em;
+        }
+        
+        .my-sliders {
+            align-items: center;
+            text-align: center;
+        }
+        
+        .servico_link {
+            background-color: var(--corPrincipal);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            font-size: 16px;
+            color: var(--corTextoPrincipal);
+            font-weight: 400;
+            padding: 1em;
+            margin: 0 auto;
+            border-radius: 5px 25px;
+        }
+        
+        .servico_link:hover {
+            color: var(--corFundoSecudaria);
+        }
+        
+        .subtitulo_servico {
+            display: flex;
+            justify-content: space-between;
+            padding: 3em 2em;
+            align-items: center;
+        }
+        
+        .botao_servico {
+            text-decoration: none;
+            background: var(--corTextoPrincipal);
+            border: none;
+            border-radius: 6px 20px;
+            color: var(--corPrincipal);
+            font-weight: 400;
+            margin-left: 1.5em;
+            padding: 0.6em;
+        }
+        
+        .botao_servico:hover {
+            background: var(--corFundoSecudaria);
+            color: var(--corTextoPrincipal);
+        }
+        
+        .titulo_servico {
+            color: var(--corTextoPrincipal);
+            font-weight: 700;
+            font-size: 24px;
+            margin-right: 2em;
+        }
+        /* Comeco da sessao Contato*/
+        
+        .contato {
+            display: flex;
+            padding: 4em;
+            margin-bottom: 3em;
+            justify-content: space-around;
+        }
+        
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            margin: 1em;
+        }
+        
+        .contato_conteiner {
+            max-width: 50%;
+        }
+        
+        .video {
+            width: 500px;
+            height: 500px;
+        }
+        
+        .contato_texto {
+            margin: 1em 1em 2em;
+            font-size: 18px;
+            color: var(--corTextoPrincipal);
+        }
+        
+        .contato_titulo {
+            color: var(--corTextoPrincipal);
+            font-size: 30px;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        form input,
+        textarea {
+            width: 90%;
+            margin-bottom: 1em;
+            padding: 1em;
+            border: none;
+            border-radius: 15px;
+        }
+        
+        form input::placeholder {
+            font-size: 16px;
+            color: #4d5795;
+            font-weight: 400;
+        }
+        
+        form textarea::placeholder {
+            font-size: 20px;
+            color: #4d5795;
+            font-weight: 400;
+        }
+        
+        textarea {
+            resize: none;
+        }
+        
+        .contato_botao {
+            padding: 1em 2.5em;
+            border: none;
+            border-radius: 5px 5px 15px 5px;
+            background: var(--corTextoPrincipal);
+            color: var(--corPrincipal);
+            align-items: baseline;
+            display: flex;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        
+        .contato_botao:hover {
+            background: var(--corFundoSecudaria);
+            color: var(--corTextoPrincipal);
+        }
+        /* Comeco da sessao Footer*/
+        
+        .rodape {
+            display: flex;
+            padding: 2em 6em;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer_titulo {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #858585;
+            list-style-type: none;
+            margin-bottom: 1em;
+        }
+        
+        .conteiner-footer {
+            padding: 3em;
+        }
+        
+        .footer_link img {
+            width: 20px;
+        }
+        
+        .footer_link_footer {
+            color: var(--corTextoPrincipal);
+            text-decoration: none;
+            margin-left: 0.7em;
+        }
+        
+        .footer_link_footer:hover {
+            color: var(--corFundoSecudaria);
+        }
+        
+        .footer_link {
+            display: flex;
+            align-items: center;
+            margin: 0.6em 0;
+        }
+        
+        .final_pagina {
+            background: var(--corFundoSecudaria);
+            padding: 1em;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .rodape_texto,
+        .rodape_texto_tablet,
+        .rodape_texto_mobile {
+            color: var(--corTextoPrincipal);
+            font-weight: 300;
+        }
+        
+        .btn-fixed {
+            position: fixed;
+            bottom: 2px;
+            right: 10px;
+            padding: .6em;
+            color: var(--corPrincipal);
+            visibility: hidden;
+            background: var(--corTextoPrincipal);
+            border-radius: 50%;
+        }
+        
+        .btn-fixed:hover {
+            background: var(--corFundoSecudaria);
+            color: var(--corTextoPrincipal);
+        }
+        
+        .btn-fixed.visible {
+            visibility: visible;
+        }
+        
+        .servico_img_teste {
+            display: none;
+        }
+        /* Tablet*/
+        
+        @media screen and (max-width: 820px) {
+            .img_nome,
+            .menu_nav,
+            .video,
+            .rodape_texto,
+            .btn-fixed,
+            .servico_img_teste {
+                display: none;
+            }
+            .swiper-slide img {
+                width: 90%;
+                height: 250px;
+                display: flex;
+                margin: 0 auto;
+            }
+            .carrosel {
+                display: flex;
+            }
+            .subtitulo_servico {
+                align-items: flex-start;
+                flex-direction: column-reverse;
+                margin-left: 3em;
+            }
+            .botao_servico {
+                margin-left: 0;
+                margin-top: 1em;
+            }
+            .servico {
+                padding: 0;
+                margin: 0;
+            }
+            .servico img {
+                width: 250px;
+            }
+            .contato {
+                padding: 4em;
+                width: 100vh;
+            }
+            .contato_texto {
+                font-size: 18px;
+            }
+            form input,
+            form textarea {
+                width: 100%;
+            }
+            .rodape {
+                padding: 0;
+                justify-content: flex-start;
+                gap: 2em;
+                margin-left: 2em;
+            }
+            .conteiner-footer {
+                padding: 3em 1em;
+            }
+        }
+        
+        @media screen and (max-width: 428px) {
+            .menu_nav,
+            .video,
+            .rodape_texto,
+            .btn-fixed,
+            .footer_nossaPagina,
+            .footer_negocios,
+            .rodape_texto_tablet {
+                display: none;
+            }
+            .cabecalho {
+                padding: 1em;
+            }
+            .swiper-slide img {
+                width: 100%;
+                height: 200px;
+                display: flex;
+                margin: 0 auto;
+            }
+            .carrosel {
+                display: flex;
+            }
+            .subtitulo_servico {
+                align-items: flex-start;
+                flex-direction: column-reverse;
+                margin-left: 0;
+            }
+            .titulo_servico {
+                font-size: 13px;
+            }
+            .botao_servico {
+                margin-left: 0;
+                margin-top: 1em;
+            }
+            .servico {
+                padding: 0;
+                margin: 0;
+            }
+            .servico img {
+                width: 250px;
+            }
+            .contato {
+                padding: 0;
+                width: 80vh;
+                justify-content: flex-start;
+            }
+            .contato_texto {
+                font-size: 13px;
+            }
+            form input,
+            form textarea {
+                width: 100%;
+            }
+            .rodape {
+                display: flex;
+                padding: 0;
+                justify-content: center;
+                gap: 2em;
+                margin-left: 3em;
+            }
+            .conteiner-footer {
+                padding: 3em 1em;
+            }
+            .servico_img_teste {
+                display: block;
+            }
+            .menu-hamburgue {
+                width: 24px;
+                height: 24px;
+                background-image: url(./assets/Menu.png);
+                display: inline-block;
+                background-repeat: no-repeat;
+                margin-right: 1em;
+            }
+            .lista_menu {
+                display: none;
+                position: absolute;
+                margin-left: -1em;
+                top: 100%;
+            }
+            .container_botao:checked~.lista_menu {
+                display: block;
+            }
+            .topo_pagina {
+                position: relative;
+                margin-bottom: 5em;
+            }
+            .lista_menu_item {
+                padding: 0.4em;
+                background-color: var(--corFundoSecudaria);
+                text-transform: uppercase;
+                list-style-type: none;
+                display: flex;
+                align-items: baseline;
+            }
+            .container_botao {
+                display: none;
+            }
+            .img_nome {
+                display: block;
+                width: 90%;
+            }
+            .logo {
+                display: flex;
+            }
+        }
