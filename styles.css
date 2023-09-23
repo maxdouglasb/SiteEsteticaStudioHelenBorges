@@ -291,7 +291,9 @@
         }
         
         .container_botao,
-        .lista_menu {
+        .lista_menu.rodape_texto_mobile,
+        .rodape_texto_tablet,
+        .lista_menu_item {
             display: none;
         }
         /* Tablet*/
