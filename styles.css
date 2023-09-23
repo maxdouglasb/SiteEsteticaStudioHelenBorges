@@ -287,7 +287,7 @@
             visibility: visible;
         }
         
-        .servico_img_teste {
+        .my-sliders {
             display: none;
         }
         
@@ -297,13 +297,13 @@
         }
         /* Tablet*/
         
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 820px) {
             .img_nome,
             .menu_nav,
             .video,
             .rodape_texto,
             .btn-fixed,
-            .servico_img_teste {
+            .my-sliders {
                 display: none;
             }
             .swiper-slide img {
@@ -399,7 +399,8 @@
             .btn-fixed,
             .footer_nossaPagina,
             .footer_negocios,
-            .rodape_texto_tablet {
+            .rodape_texto_tablet,
+            .my-sliderss {
                 display: none;
             }
             .cabecalho {
@@ -496,5 +497,8 @@
             }
             .logo {
                 display: flex;
+            }
+            .my-sliders {
+                display: block;
             }
         }
